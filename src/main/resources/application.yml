@@ -1,0 +1,11 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/springdatar2dbc?initialSize=4&maxSIze=8&acquireRetry=8&maxCreateConnectionTime=PT3&maxAcquireTime=PT3.5&maxIdleTime=PT180&poolName=db-pool-springdatar2dbc
+    username: springdatar2dbc
+    password: springdatar2dbc
+
+  flyway:
+    url: jdbc:postgresql://localhost:5432/springdatar2dbc
+    user: springdatar2dbc
+    password: springdatar2dbc
+    baseline-on-migrate: true

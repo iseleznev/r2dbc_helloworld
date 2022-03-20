@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+  db_springdatajdbc:
+    build: ./
+    container_name: springdatar2dbc_container
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - /Users/seleznev/wrks/bin/postgresql/data/springdatar2dbc:/var/lib/postgresql/data
+#volumes:
+#  data:
+#    driver: local
+
+networks:
+  pgnet:
+    driver: bridge

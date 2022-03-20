@@ -1,0 +1,21 @@
+PUT http://localhost:8080/product
+Accept: */*
+Content-Type: application/json; charset=UTF-8
+
+{
+  "name": "alpha",
+  "price": {
+    "value": 1430.5,
+    "currency": "RUB"
+  },
+  "attribute-list": [
+    {
+      "code": "country",
+      "value": "USA"
+    },
+    {
+      "code": "manufacturer",
+      "value": "Nestle"
+    }
+  ]
+}

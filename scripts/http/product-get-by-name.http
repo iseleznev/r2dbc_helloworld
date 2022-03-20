@@ -1,0 +1,3 @@
+GET http://localhost:8080/product?name=alpha
+Accept: */*
+Content-Type: application/json; charset=UTF-8

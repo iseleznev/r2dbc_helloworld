@@ -1,0 +1,14 @@
+spring.datasource.hikari.connectionTimeout=20000
+spring.datasource.hikari.maximumPoolSize=5
+
+spring.flyway.baseline-on-migrate = true
+
+## PostgreSQL
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.url=jdbc:postgresql://localhost:5432/springdatar2dbc
+spring.datasource.username=springdata2rdbc
+spring.datasource.password=springdata2rdbc
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+#spring.jpa.hibernate.ddl-auto=validate
+
